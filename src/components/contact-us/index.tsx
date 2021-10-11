@@ -7,7 +7,7 @@ import BlockHeader from '../block-header';
 
 import useGoogleReCaptchaV2 from '../../hooks/useGoogleReCaptcha';
 import { RECAPTCHA_KEY } from '../../definitions';
-import {ContactUsProps} from "../../types";
+import {LaunchCrowdsale} from "../index";
 
 const ContactUs: FunctionalComponent<ContactUsProps> = ({title, subtitle}) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -78,6 +78,7 @@ const ContactUs: FunctionalComponent<ContactUsProps> = ({title, subtitle}) => {
 
   return (
     <div className={`${style['contact-us']} ${style.container}`} id="contact-us">
+      <LaunchCrowdsale />
       <BlockHeader
         style={style}
         primary={title}

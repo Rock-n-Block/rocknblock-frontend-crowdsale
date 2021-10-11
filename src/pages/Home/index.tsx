@@ -30,8 +30,7 @@ const HomePage: FunctionalComponent = () => {
             <DevServices />
             <WhyChooseUs />
             <WhyWeUnique />
-            {/*<ContactUs title={'Estimate your project now!'}*/}
-            {/*           subtitle={'Get free consultation and build your blockchain project with our highly qualified team!'} />*/}
+            <ContactUs title={'Launch Your Own  With Rock\'n\'Block!'} />
         </div>
     )
 }
