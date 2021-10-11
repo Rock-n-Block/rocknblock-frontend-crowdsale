@@ -11,3 +11,4 @@ export { default as ThanksContainer } from './thanks-container';
 export { default as UpButton } from './up-button';
 export { default as WhatIsCrowdSale } from './what-is-crowdsale';
 export { default as HowToStart } from './how-to-start';
+export { default as DevServices } from './dev-services';
