@@ -36,3 +36,10 @@ export interface DevCardsI {
     alt: string;
 }
 
+export interface UniqueCardsI {
+    img: string;
+    title: string;
+    desc: string;
+    alt: string;
+}
+

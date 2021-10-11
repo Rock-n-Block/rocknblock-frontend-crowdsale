@@ -1,0 +1,48 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.why-us {
+  max-width: 1440px;
+  height: 757px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+  div {
+    z-index: 1;
+    padding-left: 200px;
+    h2 {
+      font-family: TTNorms, sans-serif;
+      z-index: 1;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 60px;
+      max-width: 550px;
+      text-transform: uppercase;
+      padding-bottom: 37px;
+
+      span {
+        color: #DC2C2C;
+      }
+    }
+
+    h3 {
+      font-family: TTCommons, sans-serif;
+      z-index: 1;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 500px;
+    }
+  }
+
+  img {
+    position: absolute;
+  }
+}
