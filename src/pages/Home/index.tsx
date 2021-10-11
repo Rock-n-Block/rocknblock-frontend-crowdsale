@@ -4,7 +4,7 @@ import {useState} from 'preact/hooks';
 import {
     ContactUs,
     UpButton,
-    TelegramWidget, WhatIsCrowdSale
+    TelegramWidget, WhatIsCrowdSale, HowToStart
 } from "../../components";
 import About from "../../components/about";
 
@@ -27,6 +27,7 @@ const HomePage: FunctionalComponent = () => {
             {isActive ? <UpButton /> : null}
             <About />
             <WhatIsCrowdSale />
+            <HowToStart />
             {/*<ContactUs title={'Estimate your project now!'}*/}
             {/*           subtitle={'Get free consultation and build your blockchain project with our highly qualified team!'} />*/}
         </div>
