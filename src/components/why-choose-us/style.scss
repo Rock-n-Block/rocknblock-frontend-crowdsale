@@ -16,7 +16,7 @@
     z-index: 1;
     padding-left: 200px;
 
-    @include b('desktop') {
+    @include b('1350') {
       display: none;
     }
     h2 {
