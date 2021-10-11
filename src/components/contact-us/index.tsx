@@ -8,6 +8,7 @@ import BlockHeader from '../block-header';
 import useGoogleReCaptchaV2 from '../../hooks/useGoogleReCaptcha';
 import { RECAPTCHA_KEY } from '../../definitions';
 import {LaunchCrowdsale} from "../index";
+import {ContactUsProps} from "../../types";
 
 const ContactUs: FunctionalComponent<ContactUsProps> = ({title, subtitle}) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
