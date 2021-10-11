@@ -5,6 +5,7 @@
 
 .about {
   max-width: 1440px;
+  height: 870px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -13,7 +14,7 @@
   position: relative;
 
   h1 {
-    font-family: TT Norms, sans-serif;
+    font-family: TTNorms, sans-serif;
     font-style: normal;
     z-index: 1;
     font-weight: 800;
@@ -25,7 +26,7 @@
   }
 
   h2 {
-    font-family: TT Commons, sans-serif;
+    font-family: TTCommons, sans-serif;
     font-style: normal;
     z-index: 1;
     font-weight: 500;
@@ -41,7 +42,7 @@
     height: 49px;
     justify-content: space-evenly;
     z-index: 1;
-    font-family: TT Norms, sans-serif;
+    font-family: TTNorms, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 15.5378px;

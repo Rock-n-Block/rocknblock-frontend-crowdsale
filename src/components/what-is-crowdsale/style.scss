@@ -1,0 +1,87 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+.crowdsale {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(30.15deg, #000000 14.13%, #272525 79.31%);
+  border-radius: 120px 120px 0 0;
+  padding: 111px 0 109px 0;
+
+  &__title {
+    font-family: TTNorms, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    max-width: 850px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 66px;
+
+    span {
+      color: #DC2C2C;
+    }
+  }
+
+  &__desc {
+    font-family: TTCommons, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+  }
+
+  &__img {
+    display: flex;
+    padding-bottom: 81px;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      margin-left: 60px;
+      max-width: 400px;
+      font-family: TTCommons, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+
+    div {
+      width: 340px;
+      height: 117px;
+      border-radius: 20px;
+      border: 4px solid #2C2C33;
+      padding: 30px 66px 28px 36px;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      h2 {
+        padding-left: 38px;
+        font-family: TTNorms, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
