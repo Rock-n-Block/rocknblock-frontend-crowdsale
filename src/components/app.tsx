@@ -10,8 +10,6 @@ import ThanksPage from '../pages/Thanks';
 import PrivacyPolicyPage from '../pages/PrivacyPolicy';
 import TermsPage from '../pages/Terms';
 import CompanyPage from '../pages/Company';
-import NftGiftPage from "../pages/NftGift";
-
 
 if (typeof window !== "undefined") smoothscroll.polyfill();
 
@@ -25,7 +23,6 @@ const App: FunctionalComponent = () => {
                 <PrivacyPolicyPage path='/privacy-policy' />
                 <TermsPage path='/terms-of-service' />
                 <CompanyPage path='/company' />
-                <NftGiftPage path='/nftgift' />
             </Router>
             <Footer />
         </div>

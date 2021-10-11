@@ -2,17 +2,11 @@ import {FunctionalComponent, h} from 'preact';
 import {useState} from 'preact/hooks';
 
 import {
-    About,
-    WhyUs,
-    AreasOfExpertise,
-    WhatWeDoBest,
-    CaseStudies,
-    Team,
-    OurPartners,
     ContactUs,
     UpButton,
-    TelegramWidget, Banner, ClientsFeedback
+    TelegramWidget
 } from "../../components";
+import About from "../../components/about";
 
 const HomePage: FunctionalComponent = () => {
     const [isActive, setIsActive] = useState(false);
@@ -30,19 +24,10 @@ const HomePage: FunctionalComponent = () => {
     return (
         <div>
             <TelegramWidget />
-            <Banner />
-            <About />
             {isActive ? <UpButton /> : null}
-            <WhyUs />
-            <AreasOfExpertise />
-            <WhatWeDoBest />
-            <CaseStudies />
-            <Team />
-            <OurPartners />
-            <ClientsFeedback />
-            <ContactUs title={'Estimate your project now!'}
-                       subtitle={'Get free consultation and build your blockchain project with our highly qualified team!'} />
-            {/*{isPopupClosed === 'yes' ? null : <PopUp />}*/}
+            <About />
+            {/*<ContactUs title={'Estimate your project now!'}*/}
+            {/*           subtitle={'Get free consultation and build your blockchain project with our highly qualified team!'} />*/}
         </div>
     )
 }
