@@ -13,6 +13,12 @@
   border-radius: 120px 120px 0 0;
   padding: 111px 0 109px 0;
 
+  @include b('desktop') {
+    background: linear-gradient(30.15deg, #000000 14.13%, #272525 79.31%);
+    border-radius: 40px 40px 0 0;
+    padding: 40px 20px 33px 20px;
+  }
+
   &__title {
     font-family: TTNorms, sans-serif;
     font-style: normal;
@@ -23,6 +29,16 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 66px;
+
+    @include b('desktop') {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include b('350') {
+      font-size: 32px;
+      line-height: 32px;
+    }
 
     span {
       color: #DC2C2C;
@@ -39,6 +55,16 @@
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 40px;
+
+    @include b('desktop') {
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    @include b('350') {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__img {
@@ -46,6 +72,11 @@
     padding-bottom: 81px;
     justify-content: center;
     align-items: center;
+
+    @include b('desktop') {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
     h3 {
       margin-left: 60px;
       max-width: 400px;
@@ -54,12 +85,23 @@
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
+      padding-top: 20px;
+
+      @include b('desktop') {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0;
+      }
     }
   }
 
   &__cards {
     display: flex;
-
+    @include b('desktop') {
+      flex-direction: column;
+    }
     div {
       width: 340px;
       height: 117px;
@@ -68,6 +110,12 @@
       padding: 30px 66px 28px 36px;
       display: flex;
       align-items: center;
+
+      @include b('desktop') {
+        width: 100%;
+        margin-right: 0!important;
+        margin-bottom: 10px;
+      }
 
       &:not(:last-child) {
         margin-right: 40px;

@@ -19,6 +19,14 @@ const DevServices: FunctionalComponent = () => {
                     </div>
                 )}
             </div>
+
+            <div className={style['dev__mobile']}>
+                <h2>Why Choose Rock'n'Block For Your <span>Crowdsale Development?</span></h2>
+                <h3>Rock'n'Block is the perfect place for your Crowdsale Development, our team of developers is expertise in
+                    blockchain technology that enables us to provide optimized and stable Crowdsale Development solutions as
+                    per your requirements. We also have an expert who can work dedicatedly to provide you with consultation
+                    services on each step of your Crowdsale process.</h3>
+            </div>
         </div>
     )
 }

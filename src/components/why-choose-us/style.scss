@@ -12,12 +12,15 @@
   position: relative;
   justify-content: center;
 
-  div {
+  &__block {
     z-index: 1;
     padding-left: 200px;
+
+    @include b('desktop') {
+      display: none;
+    }
     h2 {
       font-family: TTNorms, sans-serif;
-      z-index: 1;
       font-style: normal;
       font-weight: 800;
       font-size: 50px;
@@ -26,6 +29,17 @@
       text-transform: uppercase;
       padding-bottom: 37px;
 
+      @include b('tablet') {
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      @include b('350') {
+        font-size: 32px;
+        line-height: 32px;
+      }
+
       span {
         color: #DC2C2C;
       }
@@ -33,16 +47,46 @@
 
     h3 {
       font-family: TTCommons, sans-serif;
-      z-index: 1;
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
       line-height: 30px;
       max-width: 500px;
+
+      @include b('tablet') {
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      @include b('350') {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
   }
 
-  img {
+  &__img {
+    display: flex;
     position: absolute;
+    &_1 {
+      height: 757px;
+      object-fit: none;
+      @include b('tablet') {
+        height: 600px;
+      }
+    }
+
+    &_2 {
+      position: absolute;
+      right: 107px;
+      z-index: 1;
+      top: 67px;
+
+      @include b('tablet') {
+        right: 0;
+        top: -51px;
+      }
+    }
   }
 }

@@ -16,7 +16,13 @@ const About: FunctionalComponent = () => {
             </a>
 
             <div className={style['about__bg']}>
-                <img src='../../assets/img/about-bg.png' alt='about background' />
+                <picture>
+                    <source type="image/webp" srcSet='../../assets/img/about-bg-big.webp' media="(min-width: 1440px)" />
+                    <source type="image/webp" srcSet='../../assets/img/about-bg.webp' media="(min-width: 768px)" />
+                    <source type="image/webp" srcSet='../../assets/img/about-bg-mobile.webp' media="(max-width: 768px)" />
+                    <img className={style['about__bg_1']} src='../../assets/img/about-bg-big.png' alt='about background' />
+                </picture>
+                <img className={style['about__bg_2']} src='../../assets/img/about-bg-2.png' alt='about background' />
             </div>
         </div>
     )

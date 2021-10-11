@@ -13,6 +13,16 @@
   position: relative;
   padding: 89px 0 96px 0;
 
+  @include b('tablet') {
+    padding: 40px 20px 40px 20px;
+  }
+
+  div {
+    overflow-x: auto;
+    max-width: 100%;
+
+  }
+
   h2 {
     font-family: TTNorms, sans-serif;
     font-style: normal;
@@ -24,6 +34,18 @@
     text-transform: uppercase;
     padding-bottom: 40px;
     max-width: 850px;
+
+    @include b('tablet') {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding: 0 20px 40px 20px;
+    }
+
+    @include b('350') {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 
   h3 {
@@ -36,10 +58,22 @@
     text-align: center;
     padding-bottom: 60px;
     max-width: 543px;
+
+    @include b('tablet') {
+      font-size: 22px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    @include b('350') {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__img {
     z-index: 1;
+    min-width: 1000px;
   }
   
   &__bg {
