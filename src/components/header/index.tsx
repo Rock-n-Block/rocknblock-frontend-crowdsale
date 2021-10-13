@@ -1,8 +1,6 @@
 import {FunctionalComponent, h} from 'preact';
 import {useEffect, useState} from 'preact/hooks';
 import style from './style.scss';
-import {navPages} from "./mock";
-import {NavPages} from "../../types";
 
 const Header: FunctionalComponent = () => {
     const [burger, setBurger] = useState('');
@@ -34,7 +32,9 @@ const Header: FunctionalComponent = () => {
     }
 
     return (
-        <header className={!isHeaderTransparent ? style['bg-transparent'] : ''}>
+        <header className={
+            `${!isHeaderTransparent ? style['bg-transparent'] : ''} ${burger === '' ? '' : style['bg-show']}`
+        }>
             <div className={style.container}>
                 <nav className={style['main-nav']}>
                     <section className={`${style['main-nav__mobile']}`}>
@@ -52,18 +52,9 @@ const Header: FunctionalComponent = () => {
                     <section id="nav-pages"
                              className={`
                              ${style['nav-pages']} 
+                             ${style['justify-end']}
                              ${burger === '' ? null : style.topnav} 
                               `}>
-                        {
-                            navPages.map((item: NavPages, index: number) =>
-                                <a
-                                    href={item.href}
-                                    key={`${item.href}_${index}`}
-                                    className={style['nav-pages__link']}
-                                    onClick={(): void => switchIcon()}
-                                >{item.title}</a>
-                            )
-                        }
                         <a
                             href="#contact-us"
                             className={`${style['nav-pages__contact-button']} ${style['nav-pages__link']} ${style['nav-pages__link__contact-us']}`}

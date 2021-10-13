@@ -1,0 +1,84 @@
+@import "../../style/mixins/text";
+@import "../../style/mixins/image";
+@import "../../style/index";
+@import "../../style/common/buttons";
+
+
+.start {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 89px 0 96px 0;
+
+  @include b('tablet') {
+    padding: 40px 20px 40px 20px;
+  }
+
+  div {
+    overflow-x: auto;
+    max-width: 100%;
+
+  }
+
+  h2 {
+    font-family: TTNorms, sans-serif;
+    font-style: normal;
+    z-index: 1;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    max-width: 850px;
+
+    @include b('tablet') {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding: 0 20px 40px 20px;
+    }
+
+    @include b('350') {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  h3 {
+    font-family: TTCommons, sans-serif;
+    font-style: normal;
+    z-index: 1;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+    max-width: 543px;
+
+    @include b('tablet') {
+      font-size: 22px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    @include b('350') {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__img {
+    z-index: 1;
+    min-width: 1000px;
+  }
+  
+  &__bg {
+    position: absolute;
+    top: 0;
+    filter: blur(2px);
+  }
+}
