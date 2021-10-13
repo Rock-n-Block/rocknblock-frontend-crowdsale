@@ -1,5 +1,5 @@
 import {FunctionalComponent, h} from 'preact';
-import {useState} from 'preact/hooks';
+import {useCallback, useEffect, useState} from 'preact/hooks';
 
 import {
     ContactUs,
@@ -10,15 +10,24 @@ import {
 const HomePage: FunctionalComponent = () => {
     const [isActive, setIsActive] = useState(false);
 
-    if (typeof window !== 'undefined') {
-        window.onscroll = (): void => {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                setIsActive(true);
-            } else {
-                setIsActive(false);
-            }
+    const logIt = useCallback(() => {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            setIsActive(true);
+        } else {
+            setIsActive(false);
         }
-    }
+    }, [])
+
+    useEffect(() => {
+
+        const watchScroll = (): void => {
+            window.addEventListener("scroll", logIt);
+        }
+        watchScroll();
+        return (): void => {
+            window.removeEventListener("scroll", logIt);
+        };
+    });
 
     return (
         <div>
