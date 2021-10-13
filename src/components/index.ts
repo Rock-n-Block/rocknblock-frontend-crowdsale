@@ -16,3 +16,4 @@ export { default as WhyChooseUs } from './why-choose-us';
 export { default as WhyWeUnique } from './why-we-unique';
 export { default as About} from './about';
 export { default as LaunchCrowdsale} from './launch-crowdsale';
+export { default as OtherSites} from './other-sites';

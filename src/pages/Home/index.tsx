@@ -4,7 +4,7 @@ import {useState} from 'preact/hooks';
 import {
     ContactUs,
     UpButton,
-    TelegramWidget, WhatIsCrowdSale, HowToStart, DevServices, WhyWeUnique, WhyChooseUs, About
+    TelegramWidget, WhatIsCrowdSale, HowToStart, DevServices, WhyWeUnique, WhyChooseUs, About, OtherSites
 } from "../../components";
 
 const HomePage: FunctionalComponent = () => {
@@ -30,6 +30,7 @@ const HomePage: FunctionalComponent = () => {
             <DevServices />
             <WhyChooseUs />
             <WhyWeUnique />
+            <OtherSites />
             <ContactUs title={'Launch Your Own  With Rock\'n\'Block!'} />
         </div>
     )

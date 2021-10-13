@@ -43,3 +43,9 @@ export interface UniqueCardsI {
     alt: string;
 }
 
+export interface OtherSitesI {
+    img: string;
+    alt: string;
+    title: string;
+}
+
