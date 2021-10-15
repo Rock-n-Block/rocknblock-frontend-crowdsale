@@ -9,6 +9,7 @@ const About: FunctionalComponent = () => {
             <h2>We Help You To Raise Funds For Your Venture By Legally Tokenizing Your Real World Assets Through crowdsale contract
                 Crowdsale pack (token+crowdsale contract) - To Attract Accredited Investors Around The World.</h2>
             <a
+                href='#contact-us'
                 className={`${style.btn} ${style['btn-orange-cl-solid']} ${style['btn-rounded']}`}
             >
                 Launch your own Crowdsale
