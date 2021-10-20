@@ -19,3 +19,4 @@ export { default as LaunchCrowdsale} from './launch-crowdsale';
 export { default as OtherSites} from './other-sites';
 export { default as Input } from './input';
 export { default as SocialInput } from './input/socialInput';
+export { default as PopupPreloader } from './PopupPreloader';
