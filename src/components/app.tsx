@@ -10,12 +10,29 @@ import ThanksPage from '../pages/Thanks';
 import PrivacyPolicyPage from '../pages/PrivacyPolicy';
 import TermsPage from '../pages/Terms';
 import CompanyPage from '../pages/Company';
+import {useEffect, useState} from "preact/hooks";
+import {PopupPreloader} from "./index";
 
 if (typeof window !== "undefined") smoothscroll.polyfill();
 
 const App: FunctionalComponent = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    useEffect(
+        () => {
+            setTimeout(
+                () => {
+                    setIsLoading(!isLoading);
+                },
+                2000
+            );
+        },
+        []
+    );
+
     return (
         <div id="preact_root">
+            {isLoading && <PopupPreloader />}
             <Header />
             <Router>
                 <HomePage path='/' />
