@@ -25,7 +25,7 @@ const WhatIsCrowdSale: FunctionalComponent = () => {
                 </div>
                 <div>
                     <img src='../../assets/img/icons/fist.svg' alt='fist icon' />
-                    <h2>trustless</h2>
+                    <h2>trustfull</h2>
                 </div>
                 <div>
                     <img src='../../assets/img/icons/speedometer.svg' alt='speedometer icon' />
